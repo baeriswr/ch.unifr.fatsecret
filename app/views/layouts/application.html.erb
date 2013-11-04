@@ -8,6 +8,12 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
+    <script src="http://platform.fatsecret.com/js?key=cac271e1f5114c8298cd23ca772809fd"></script>
+    <script>
+            fatsecret.setContainer("my_container");
+            fatsecret.setCanvas("home");
+
+    </script>
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <div id="container" class="container">
